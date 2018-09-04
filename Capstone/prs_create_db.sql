@@ -62,8 +62,9 @@ CREATE TABLE PurchaseRequest (
   -- create product table  
   CREATE TABLE product (
   ID			INT				PRIMARY KEY		auto_increment,
-  VendorID		INT				unique			NOT NULL,
-  PartNumber	VARCHAR(50)		unique			NOT NULL,
+  VendorID		INT				NOT NULL,
+  PartNumber	VARCHAR(50)		NULL,
+  Name			VARCHAR(150)	NOT NULL,
   Price			Decimal(10,2)	NOT Null,
   Unit			Varchar(255),
   PhotoPath		Varchar(255),
