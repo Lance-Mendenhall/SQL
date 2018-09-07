@@ -3,7 +3,7 @@ DROP DATABASE IF EXISTS mma;
 CREATE DATABASE mma;
 USE mma;
 
--- create the Product table
+-- create the Product table  
 CREATE TABLE Product (
   ID			INT            PRIMARY KEY  AUTO_INCREMENT,
   Code          VARCHAR(10)    NOT NULL     UNIQUE,
